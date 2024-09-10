@@ -1,6 +1,6 @@
 import os
 from typing import TypedDict
-from datetime import date, datetime, timedelta
+from datetime import date, timedelta
 
 from config import market_instrument_token
 from kiteconnect import KiteConnect
@@ -133,4 +133,5 @@ def main():
     save_all_reports(reports)
 
 
-main()
+if __name__ == '__main__':
+    main()
